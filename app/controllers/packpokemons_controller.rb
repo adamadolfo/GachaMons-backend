@@ -1,0 +1,2 @@
+class PackpokemonsController < ApplicationController
+end
