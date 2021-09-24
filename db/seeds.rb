@@ -15,6 +15,10 @@ PackPokemon.destroy_all
 # adam = User.create(name: "adam")
 
 #pack
+budget = Pack.create!(name: "Budget Pack", amount: 3, art: "https://i.imgur.com/Lr3e6jh.png", description: "This pack is populated with weaker pokemon", typing: "Budget")
+standard = Pack.create!(name: "Standard Pack", amount: 3, art: "https://i.imgur.com/Lr3e6jh.png", description: "This pack is populated with all available pokemon", typing: "Standard")
+heavy = Pack.create!(name: "Heavy Pack", amount: 3, art: "https://i.imgur.com/Lr3e6jh.png", description: "This pack is populated with only formiddable pokemon", typing: "Heavy")
+
 fire = Pack.create!(name: "Fire Pack", amount: 3, art: "https://i.imgur.com/2OkiO6F.png", description: "a pack of fire pokemon", typing: "Type")
 dragon = Pack.create!(name: "Dragon Pack", amount: 3, art: "https://i.imgur.com/LiXT11b.png", description: "a pack of dragon pokemon", typing: "Type")
 ground = Pack.create!(name: "Ground Pack", amount: 3, art: "https://i.imgur.com/QsUjuu4.png", description: "a pack of ground pokemon", typing: "Type")
@@ -34,14 +38,24 @@ poison = Pack.create!(name: "Poison Pack", amount: 3, art: "https://i.imgur.com/
 flying = Pack.create!(name: "Flying Pack", amount: 3, art: "https://i.imgur.com/9EpdtXD.png", description: "a pack of Flying pokemon", typing: "Type")
 bug = Pack.create!(name: "Bug Pack", amount: 3, art: "https://i.imgur.com/Lr3e6jh.png", description: "a pack of Bug pokemon", typing: "Type")
 
-
-
 mega1 = Pack.create!(name: "Mega Pack I", amount: 2, art: "https://i.imgur.com/AJlpDBU.png", description: "a pack of mega pokemon highlighted by secret rares Mega Gengar and Mega Alakazam! 2 Rolls per pack", typing: "Mega")
 mega2 = Pack.create!(name: "Mega Pack II", amount: 2, art: "https://i.imgur.com/AJlpDBU.png", description: "a pack of mega pokemon highlighted by secret rares Mega Metagross and Mega Latios! 2 Rolls per pack", typing: "Mega")
 mega3 = Pack.create!(name: "Mega Pack III", amount: 2, art: "https://i.imgur.com/AJlpDBU.png", description: "a pack of mega pokemon highlighted by secret rares Mega Salamence and Mega Blaziken! 2 Rolls per pack", typing: "Mega")
 mega4 = Pack.create!(name: "Mega Pack IV", amount: 2, art: "https://i.imgur.com/AJlpDBU.png", description: "a pack of mega pokemon highlighted by secret rares Mega Lucario and Mega Latias! 2 Rolls per pack", typing: "Mega")
 
 
+#standard
+# Pokemon.all.each {|pokemon| 
+#     PackPokemon.create!(pack_id: standard.id, pokemon_id: pokemon.id)
+# }
+
+
+# budget
+# Pokemon.all.each {|pokemon| 
+#     if pokemon.overall < 8 
+#         PackPokemon.create!(pack_id: budget.id, pokemon_id: pokemon.id)
+#     end
+# }
 
 #fire
 hooh = Pokemon.create!(name:"HoOh", overall: 10)
@@ -219,7 +233,7 @@ dragon17 = PackPokemon.create!(pack_id: dragon.id, pokemon_id: zygarde10.id)
 appletun = Pokemon.create!(name:"Appletun", overall: 6)
 dragon20 = PackPokemon.create!(pack_id: dragon.id, pokemon_id: appletun.id)
 
-dracozolt = Pokemon.create!(name:"Dracozolt", overall: 6)
+dracozolt = Pokemon.create!(name:"Dracozolt", overall: 7)
 dragon21 = PackPokemon.create!(pack_id: dragon.id, pokemon_id: dracozolt.id)
 
 drampa = Pokemon.create!(name:"Drampa", overall: 6)
@@ -240,7 +254,7 @@ dragon26 = PackPokemon.create!(pack_id: dragon.id, pokemon_id: flapple.id)
 flygon = Pokemon.create!(name:"Flygon", overall: 6)
 dragon27 = PackPokemon.create!(pack_id: dragon.id, pokemon_id: flygon.id)
 
-goodra = Pokemon.create!(name:"Goodra", overall: 6)
+goodra = Pokemon.create!(name:"Goodra", overall: 7)
 dragon28 = PackPokemon.create!(pack_id: dragon.id, pokemon_id: goodra.id)
 
 guzzlord = Pokemon.create!(name:"Guzzlord", overall: 6)
@@ -252,7 +266,7 @@ dragon30 = PackPokemon.create!(pack_id: dragon.id, pokemon_id: kingdra.id)
 regidrago = Pokemon.create!(name:"Regidrago", overall: 6)
 dragon31 = PackPokemon.create!(pack_id: dragon.id, pokemon_id: regidrago.id)
 
-tyrantrum = Pokemon.create!(name:"Tyrantrum", overall: 6)
+tyrantrum = Pokemon.create!(name:"Tyrantrum", overall: 7)
 dragon32 = PackPokemon.create!(pack_id: dragon.id, pokemon_id: tyrantrum.id)
 
 dragon33 = PackPokemon.create!(pack_id: dragon.id, pokemon_id: turtonator.id)
@@ -1492,7 +1506,7 @@ steel22 = PackPokemon.create!(pack_id: steel.id, pokemon_id: empoleon.id)
 escavalier = Pokemon.create!(name: "Escavalier", overall: 6)
 steel23 = PackPokemon.create!(pack_id: steel.id, pokemon_id: escavalier.id)
 
-forretress = Pokemon.create!(name: "Forretress", overall: 6)
+forretress = Pokemon.create!(name: "Forretress", overall: 7)
 steel24 = PackPokemon.create!(pack_id: steel.id, pokemon_id: forretress.id)
 
 steel25 = PackPokemon.create!(pack_id: steel.id, pokemon_id: klefki.id)
@@ -2259,6 +2273,36 @@ mega438 = PackPokemon.create!(pack_id: mega4.id, pokemon_id: venusaurmega.id)
 mega439 = PackPokemon.create!(pack_id: mega4.id, pokemon_id: tyranitarmega.id)
 
 
+#heavy
+
+id = Pokemon.first.id
+
+Pokemon.all.size.times do  
+    pokemon = Pokemon.find(id)
+    if pokemon.overall > 6 
+        PackPokemon.create!(pack_id: heavy.id, pokemon_id: pokemon.id)
+    end
+    id += 1
+end
+
+#budget
+id = Pokemon.first.id
+
+Pokemon.all.size.times do  
+    pokemon = Pokemon.find(id)
+    if pokemon.overall < 7 
+        PackPokemon.create!(pack_id: budget.id, pokemon_id: pokemon.id)
+    end
+    id += 1
+end
+
+id = Pokemon.first.id
+
+Pokemon.all.size.times do  
+    pokemon = Pokemon.find(id)
+    PackPokemon.create!(pack_id: standard.id, pokemon_id: pokemon.id)
+    id += 1
+end
 
 
 

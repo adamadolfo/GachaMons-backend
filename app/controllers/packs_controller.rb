@@ -8,18 +8,9 @@ class PacksController < ApplicationController
     render json: @pack
  end
 
-#  def create
-#     @pack = Pack.new()
-
-#     if @pack.save
-#       render json: @pack
-#     else
-#       render json: @pack
-#     end
-#   end
 
  def roll_pack()
     @pack = Pack.find(params[:pack_id])
-    render json: @pack.final_pack()
+    render json: @pack.final_pack(params[:pack_typing])
  end
 end
