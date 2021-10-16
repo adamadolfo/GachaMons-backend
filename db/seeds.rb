@@ -1,10 +1,3 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
 
 Pokemon.destroy_all
 Pack.destroy_all
@@ -15,48 +8,43 @@ PackPokemon.destroy_all
 # adam = User.create(name: "adam")
 
 #pack
-budget = Pack.create!(name: "Budget Pack", amount: 3, art: "https://i.imgur.com/Lr3e6jh.png", description: "This pack is populated with weaker pokemon", typing: "Budget")
-standard = Pack.create!(name: "Standard Pack", amount: 3, art: "https://i.imgur.com/Lr3e6jh.png", description: "This pack is populated with all available pokemon", typing: "Standard")
-heavy = Pack.create!(name: "Heavy Pack", amount: 3, art: "https://i.imgur.com/Lr3e6jh.png", description: "This pack is populated with only formiddable pokemon", typing: "Heavy")
+budget = Pack.create!(name: "Budget Pack", amount: 3, art: "https://i.imgur.com/DnK9ZWu.png", description: "This pack is populated with weaker pokemon", typing: "Budget")
+standard = Pack.create!(name: "Standard Pack", amount: 3, art: "https://i.imgur.com/tasnpCo.png", description: "This pack is populated with all available pokemon", typing: "Standard")
+heavy = Pack.create!(name: "Heavy Pack", amount: 3, art: "https://i.imgur.com/WitA8id.png", description: "This pack is populated with only formiddable pokemon", typing: "Heavy")
 
-fire = Pack.create!(name: "Fire Pack", amount: 3, art: "https://i.imgur.com/2OkiO6F.png", description: "a pack of fire pokemon", typing: "Type")
-dragon = Pack.create!(name: "Dragon Pack", amount: 3, art: "https://i.imgur.com/LiXT11b.png", description: "a pack of dragon pokemon", typing: "Type")
-ground = Pack.create!(name: "Ground Pack", amount: 3, art: "https://i.imgur.com/QsUjuu4.png", description: "a pack of ground pokemon", typing: "Type")
-normal = Pack.create!(name: "Normal Pack", amount: 3, art: "https://i.imgur.com/2CGtkUS.png", description: "a pack of normal pokemon", typing: "Type")
-water = Pack.create!(name: "Water Pack", amount: 3, art: "https://i.imgur.com/rP7xxhr.png", description: "a pack of water pokemon", typing: "Type")
-fighting = Pack.create!(name: "Fighting Pack", amount: 3, art: "https://i.imgur.com/uXZJ8Rd.png", description: "a pack of fighting pokemon", typing: "Type")
-grass = Pack.create!(name: "Grass Pack", amount: 3, art: "https://i.imgur.com/3CNVFHi.png", description: "a pack of grass pokemon", typing: "Type")
-dark = Pack.create!(name: "Dark Pack", amount: 3, art: "https://i.imgur.com/I8TJSIP.png", description: "a pack of dragon pokemon", typing: "Type")
-rock = Pack.create!(name: "Rock Pack", amount: 3, art: "https://i.imgur.com/DXHzSoM.png", description: "a pack of rock pokemon", typing: "Type")
-ice = Pack.create!(name: "Ice Pack", amount: 3, art: "https://i.imgur.com/weWjuMo.png", description: "a pack of ice pokemon", typing: "Type")
-psychic = Pack.create!(name: "Psychic Pack", amount: 3, art: "https://i.imgur.com/OqJtedr.png", description: "a pack of Psychic pokemon", typing: "Type")
-fairy = Pack.create!(name: "Fairy Pack", amount: 3, art: "https://i.imgur.com/FGZotzu.png", description: "a pack of Fairy pokemon", typing: "Type")
-steel = Pack.create!(name: "Steel Pack", amount: 3, art: "https://i.imgur.com/NBjm7IJ.png", description: "a pack of Steel pokemon", typing: "Type")
-ghost = Pack.create!(name: "Ghost Pack", amount: 3, art: "https://i.imgur.com/Yxg87hu.png", description: "a pack of Ghost pokemon", typing: "Type")
-electric = Pack.create!(name: "Electric Pack", amount: 3, art: "https://i.imgur.com/hJTCjzB.png", description: "a pack of Ghost pokemon", typing: "Type")
-poison = Pack.create!(name: "Poison Pack", amount: 3, art: "https://i.imgur.com/g0r24xc.png", description: "a pack of Poison pokemon", typing: "Type")
-flying = Pack.create!(name: "Flying Pack", amount: 3, art: "https://i.imgur.com/9EpdtXD.png", description: "a pack of Flying pokemon", typing: "Type")
-bug = Pack.create!(name: "Bug Pack", amount: 3, art: "https://i.imgur.com/Lr3e6jh.png", description: "a pack of Bug pokemon", typing: "Type")
+fire = Pack.create!(name: "Fire", amount: 3, art: "https://i.imgur.com/2OkiO6F.png", description: "a pack of fire pokemon", typing: "Type")
+dragon = Pack.create!(name: "Dragon", amount: 3, art: "https://i.imgur.com/LiXT11b.png", description: "a pack of dragon pokemon", typing: "Type")
+ground = Pack.create!(name: "Ground", amount: 3, art: "https://i.imgur.com/QsUjuu4.png", description: "a pack of ground pokemon", typing: "Type")
+normal = Pack.create!(name: "Normal", amount: 3, art: "https://i.imgur.com/2CGtkUS.png", description: "a pack of normal pokemon", typing: "Type")
+water = Pack.create!(name: "Water", amount: 3, art: "https://i.imgur.com/rP7xxhr.png", description: "a pack of water pokemon", typing: "Type")
+fighting = Pack.create!(name: "Fighting", amount: 3, art: "https://i.imgur.com/uXZJ8Rd.png", description: "a pack of fighting pokemon", typing: "Type")
+grass = Pack.create!(name: "Grass", amount: 3, art: "https://i.imgur.com/3CNVFHi.png", description: "a pack of grass pokemon", typing: "Type")
+dark = Pack.create!(name: "Dark", amount: 3, art: "https://i.imgur.com/I8TJSIP.png", description: "a pack of dragon pokemon", typing: "Type")
+rock = Pack.create!(name: "Rock", amount: 3, art: "https://i.imgur.com/DXHzSoM.png", description: "a pack of rock pokemon", typing: "Type")
+ice = Pack.create!(name: "Ice", amount: 3, art: "https://i.imgur.com/weWjuMo.png", description: "a pack of ice pokemon", typing: "Type")
+psychic = Pack.create!(name: "Psychic", amount: 3, art: "https://i.imgur.com/OqJtedr.png", description: "a pack of Psychic pokemon", typing: "Type")
+fairy = Pack.create!(name: "Fairy", amount: 3, art: "https://i.imgur.com/FGZotzu.png", description: "a pack of Fairy pokemon", typing: "Type")
+steel = Pack.create!(name: "Steel", amount: 3, art: "https://i.imgur.com/NBjm7IJ.png", description: "a pack of Steel pokemon", typing: "Type")
+ghost = Pack.create!(name: "Ghost", amount: 3, art: "https://i.imgur.com/Yxg87hu.png", description: "a pack of Ghost pokemon", typing: "Type")
+electric = Pack.create!(name: "Electric", amount: 3, art: "https://i.imgur.com/hJTCjzB.png", description: "a pack of Ghost pokemon", typing: "Type")
+poison = Pack.create!(name: "Poison", amount: 3, art: "https://i.imgur.com/g0r24xc.png", description: "a pack of Poison pokemon", typing: "Type")
+flying = Pack.create!(name: "Flying", amount: 3, art: "https://i.imgur.com/9EpdtXD.png", description: "a pack of Flying pokemon", typing: "Type")
+bug = Pack.create!(name: "Bug", amount: 3, art: "https://i.imgur.com/Lr3e6jh.png", description: "a pack of Bug pokemon", typing: "Type")
 
-mega1 = Pack.create!(name: "Mega Pack I", amount: 2, art: "https://i.imgur.com/AJlpDBU.png", description: "a pack of mega pokemon highlighted by secret rares Mega Gengar and Mega Alakazam! 2 Rolls per pack", typing: "Mega")
-mega2 = Pack.create!(name: "Mega Pack II", amount: 2, art: "https://i.imgur.com/AJlpDBU.png", description: "a pack of mega pokemon highlighted by secret rares Mega Metagross and Mega Latios! 2 Rolls per pack", typing: "Mega")
-mega3 = Pack.create!(name: "Mega Pack III", amount: 2, art: "https://i.imgur.com/AJlpDBU.png", description: "a pack of mega pokemon highlighted by secret rares Mega Salamence and Mega Blaziken! 2 Rolls per pack", typing: "Mega")
-mega4 = Pack.create!(name: "Mega Pack IV", amount: 2, art: "https://i.imgur.com/AJlpDBU.png", description: "a pack of mega pokemon highlighted by secret rares Mega Lucario and Mega Latias! 2 Rolls per pack", typing: "Mega")
+mega1 = Pack.create!(name: "Mega I", amount: 2, art: "https://i.imgur.com/AJlpDBU.png", description: "a pack of mega pokemon highlighted by secret rares Mega Gengar and Mega Alakazam! 2 Rolls per pack", typing: "Mega")
+mega2 = Pack.create!(name: "Mega II", amount: 2, art: "https://i.imgur.com/AJlpDBU.png", description: "a pack of mega pokemon highlighted by secret rares Mega Metagross and Mega Latios! 2 Rolls per pack", typing: "Mega")
+mega3 = Pack.create!(name: "Mega III", amount: 2, art: "https://i.imgur.com/AJlpDBU.png", description: "a pack of mega pokemon highlighted by secret rares Mega Salamence and Mega Blaziken! 2 Rolls per pack", typing: "Mega")
+mega4 = Pack.create!(name: "Mega IV", amount: 2, art: "https://i.imgur.com/AJlpDBU.png", description: "a pack of mega pokemon highlighted by secret rares Mega Lucario and Mega Latias! 2 Rolls per pack", typing: "Mega")
 
-
-#standard
-# Pokemon.all.each {|pokemon| 
-#     PackPokemon.create!(pack_id: standard.id, pokemon_id: pokemon.id)
-# }
-
-
-# budget
-# Pokemon.all.each {|pokemon| 
-#     if pokemon.overall < 8 
-#         PackPokemon.create!(pack_id: budget.id, pokemon_id: pokemon.id)
-#     end
-# }
-
+breaker = Pack.create!(name: "Breaker", amount: 3, art: "https://i.imgur.com/nDOBGzd.png", description: "a pack containing pokemon with wall breaking and stall breaking abilities or high base offensive stats.", typing: "Role")
+cleric = Pack.create!(name: "Cleric", amount: 3, art: "https://i.imgur.com/wyxeRCR.png", description: "a pack containing pokemon with healing or supporting abilities.", typing: "Role")
+hazard = Pack.create!(name: "Hazard", amount: 3, art: "https://i.imgur.com/GVAPhCt.png", description: "a pack containing pokemon with access to different hazard setting.", typing: "Role")
+pivot = Pack.create!(name: "Pivot", amount: 3, art: "https://i.imgur.com/u6owROc.png", description: "a pack containing pokemon with access to different pivoting moves.", typing: "Role")
+removal = Pack.create!(name: "Removal", amount: 3, art: "https://i.imgur.com/cIpEG4C.png", description: "a pack containing pokemon with access hazard removal or deterents.", typing: "Role")
+setup = Pack.create!(name: "Setupp", amount: 3, art: "https://i.imgur.com/NYMVjpz.png", description: "a pack containing pokemon with access to stat boosting options.", typing: "Role")
+slow = Pack.create!(name: "Slow", amount: 3, art: "https://i.imgur.com/cO8GEs6.png", description: "a pack containing pokemon with low base speeds and/or trick room support.", typing: "Role")
+speed = Pack.create!(name: "Speed", amount: 3, art: "https://i.imgur.com/1vZdDkB.png", description: "a pack containing pokemon with high base speed or speed support.", typing: "Role")
+wall = Pack.create!(name: "Hazard", amount: 3, art: "https://i.imgur.com/a3LcgbX.png", description: "a pack containing pokemon with bulk or recovery.", typing: "Role")
 #fire
 hooh = Pokemon.create!(name:"HoOh", overall: 10)
 fire1 = PackPokemon.create!(pack_id: fire.id, pokemon_id: hooh.id)
@@ -1311,8 +1299,6 @@ psychic31 = PackPokemon.create!(pack_id: psychic.id, pokemon_id: reuniclus.id)
 
 slowbrogalar = Pokemon.create!(name: "Slowbro-Galar", overall: 7)
 psychic30 = PackPokemon.create!(pack_id: psychic.id, pokemon_id: slowbrogalar.id)
-
-# starmie = Pokemon.create!(name: "Starmie", overall: 6)
 psychic36 = PackPokemon.create!(pack_id: psychic.id, pokemon_id: starmie.id)
 
 uxie = Pokemon.create!(name: "Uxie", overall: 6)
@@ -2284,6 +2270,691 @@ Pokemon.all.size.times do
     end
     id += 1
 end
+
+breaker1 = PackPokemon.create!(pack_id: breaker.id, pokemon_id: kartana.id)
+breaker2 = PackPokemon.create!(pack_id: breaker.id, pokemon_id: rampardos.id)
+breaker3 = PackPokemon.create!(pack_id: breaker.id, pokemon_id: haxorus.id)
+breaker4 = PackPokemon.create!(pack_id: breaker.id, pokemon_id: glastrier.id)
+breaker5 = PackPokemon.create!(pack_id: breaker.id, pokemon_id: darmanitan.id)
+breaker6 = PackPokemon.create!(pack_id: breaker.id, pokemon_id: rhyperior.id)
+breaker7 = PackPokemon.create!(pack_id: breaker.id, pokemon_id: buzzwole.id)
+breaker8 = PackPokemon.create!(pack_id: breaker.id, pokemon_id: escavalier.id)
+breaker9 = PackPokemon.create!(pack_id: breaker.id, pokemon_id: crabominable.id)
+breaker10 = PackPokemon.create!(pack_id: breaker.id, pokemon_id: dhelmise.id)
+breaker11 = PackPokemon.create!(pack_id: breaker.id, pokemon_id: breloom.id)
+breaker12 = PackPokemon.create!(pack_id: breaker.id, pokemon_id: absol.id)
+kingler = Pokemon.create(name: "Kingler", overall: 6)
+breaker13 = PackPokemon.create!(pack_id: breaker.id, pokemon_id: kingler.id)
+breaker14 = PackPokemon.create!(pack_id: breaker.id, pokemon_id: pangoro.id)
+breaker15 = PackPokemon.create!(pack_id: breaker.id, pokemon_id: heracross.id)
+breaker16 = PackPokemon.create!(pack_id: breaker.id, pokemon_id: emboar.id)
+breaker17 = PackPokemon.create!(pack_id: breaker.id, pokemon_id: tyrantrum.id)
+breaker18 = PackPokemon.create!(pack_id: breaker.id, pokemon_id: crawdaunt.id)
+breaker19 = PackPokemon.create!(pack_id: breaker.id, pokemon_id: lucario.id)
+breaker20 = PackPokemon.create!(pack_id: breaker.id, pokemon_id: staraptor.id)
+xurkitree = Pokemon.create(name: "Xurkitree", overall: 7)
+breaker21 = PackPokemon.create!(pack_id: breaker.id, pokemon_id: xurkitree.id)
+breaker22 = PackPokemon.create!(pack_id: breaker.id, pokemon_id: hoopa.id)
+breaker23 = PackPokemon.create!(pack_id: breaker.id, pokemon_id: chandelure.id)
+breaker24 = PackPokemon.create!(pack_id: breaker.id, pokemon_id: alakazam.id)
+breaker25 = PackPokemon.create!(pack_id: breaker.id, pokemon_id: porygonz.id)
+breaker26 = PackPokemon.create!(pack_id: breaker.id, pokemon_id: magnezone.id)
+breaker27 = PackPokemon.create!(pack_id: breaker.id, pokemon_id: gengar.id)
+breaker28 = PackPokemon.create!(pack_id: breaker.id, pokemon_id: primarina.id)
+breaker29 = PackPokemon.create!(pack_id: breaker.id, pokemon_id: azelf.id)
+breaker30 = PackPokemon.create!(pack_id: breaker.id, pokemon_id: roserade.id)
+inteleon = Pokemon.create(name: "Inteleon", overall: 6)
+breaker31 = PackPokemon.create!(pack_id: breaker.id, pokemon_id: inteleon.id)
+breaker32 = PackPokemon.create!(pack_id: breaker.id, pokemon_id: yanmega.id)
+breaker33 = PackPokemon.create!(pack_id: breaker.id, pokemon_id: toxtricity.id)
+breaker34 = PackPokemon.create!(pack_id: breaker.id, pokemon_id: regieleki.id)
+breaker35 = PackPokemon.create!(pack_id: breaker.id, pokemon_id: magmortar.id)
+breaker36 = PackPokemon.create!(pack_id: breaker.id, pokemon_id: jynx.id)
+breaker37 = PackPokemon.create!(pack_id: breaker.id, pokemon_id: articunogalar.id)
+beheeyem = Pokemon.create(name: "Beheeyem", overall: 6)
+breaker38 = PackPokemon.create!(pack_id: breaker.id, pokemon_id: beheeyem.id)
+breaker39 = PackPokemon.create!(pack_id: breaker.id, pokemon_id: moltres.id)
+breaker40 = PackPokemon.create!(pack_id: breaker.id, pokemon_id: glaceon.id)
+
+cleric1 = PackPokemon.create!(pack_id: cleric.id, pokemon_id: blissey.id)
+
+cleric2 = PackPokemon.create!(pack_id: cleric.id, pokemon_id: chansey.id)
+
+cleric3 = PackPokemon.create!(pack_id: cleric.id, pokemon_id: alomomola.id)
+
+cleric4 = PackPokemon.create!(pack_id: cleric.id, pokemon_id: audino.id)
+
+cleric5 = PackPokemon.create!(pack_id: cleric.id, pokemon_id: celebi.id)
+
+cleric6 = PackPokemon.create!(pack_id: cleric.id, pokemon_id: mesprit.id)
+
+cleric7 = PackPokemon.create!(pack_id: cleric.id, pokemon_id: shaymin.id)
+
+cleric8 = PackPokemon.create!(pack_id: cleric.id, pokemon_id: hatterene.id)
+
+cleric9 = PackPokemon.create!(pack_id: cleric.id, pokemon_id: cresselia.id)
+
+cleric10 = PackPokemon.create!(pack_id: cleric.id, pokemon_id: clefable.id)
+
+cleric11 = PackPokemon.create!(pack_id: cleric.id, pokemon_id: umbreon.id)
+
+cleric12 = PackPokemon.create!(pack_id: cleric.id, pokemon_id: comfey.id)
+
+cleric13 = PackPokemon.create!(pack_id: cleric.id, pokemon_id: flareon.id)
+
+cleric14 = PackPokemon.create!(pack_id: cleric.id, pokemon_id: florges.id)
+
+cleric15 = PackPokemon.create!(pack_id: cleric.id, pokemon_id: granbull.id)
+
+cleric16 = PackPokemon.create!(pack_id: cleric.id, pokemon_id: lapras.id)
+
+cleric17 = PackPokemon.create!(pack_id: cleric.id, pokemon_id: lanturn.id)
+
+cleric18 = PackPokemon.create!(pack_id: cleric.id, pokemon_id: wigglytuff.id)
+
+cleric19 = PackPokemon.create!(pack_id: cleric.id, pokemon_id: miltank.id)
+
+cleric20 = PackPokemon.create!(pack_id: cleric.id, pokemon_id: lickilicky.id)
+
+cleric21 = PackPokemon.create!(pack_id: cleric.id, pokemon_id: alcremie.id)
+
+cleric22 = PackPokemon.create!(pack_id: cleric.id, pokemon_id: aromatisse.id)
+
+cleric23 = PackPokemon.create!(pack_id: cleric.id, pokemon_id: indeedee.id)
+
+cleric24 = PackPokemon.create!(pack_id: cleric.id, pokemon_id: tsareena.id)
+
+cleric25 = PackPokemon.create!(pack_id: cleric.id, pokemon_id: polteageist.id)
+
+cleric26 = PackPokemon.create!(pack_id: cleric.id, pokemon_id: weezinggalar.id)
+
+cleric27 = PackPokemon.create!(pack_id: cleric.id, pokemon_id: latias.id)
+
+cleric28 = PackPokemon.create!(pack_id: cleric.id, pokemon_id: absol.id)
+
+cleric29 = PackPokemon.create!(pack_id: cleric.id, pokemon_id: komala.id)
+
+cleric30 = PackPokemon.create!(pack_id: cleric.id, pokemon_id: kangaskhan.id)
+
+cleric31 = PackPokemon.create!(pack_id: cleric.id, pokemon_id: raichu.id)
+
+cleric32 = PackPokemon.create!(pack_id: cleric.id, pokemon_id: vaporeon.id)
+
+cleric33 = PackPokemon.create!(pack_id: cleric.id, pokemon_id: jolteon.id)
+
+cleric34 = PackPokemon.create!(pack_id: cleric.id, pokemon_id: slurpuff.id)
+
+cleric35 = PackPokemon.create!(pack_id: cleric.id, pokemon_id: sylveon.id)
+
+cleric36 = PackPokemon.create!(pack_id: cleric.id, pokemon_id: farfetchd.id)
+
+cleric37 = PackPokemon.create!(pack_id: cleric.id, pokemon_id: glaceon.id)
+
+cleric38 = PackPokemon.create!(pack_id: cleric.id, pokemon_id: togedemaru.id)
+
+cleric39 = PackPokemon.create!(pack_id: cleric.id, pokemon_id: unfezant.id)
+
+cleric40 = PackPokemon.create!(pack_id: cleric.id, pokemon_id: togekiss.id)
+
+hazard1 = PackPokemon.create!(pack_id: hazard.id, pokemon_id: ferrothorn.id)
+
+hazard2 = PackPokemon.create!(pack_id: hazard.id, pokemon_id: greninja.id)
+
+hazard3 = PackPokemon.create!(pack_id: hazard.id, pokemon_id: mew.id)
+
+hazard4 = PackPokemon.create!(pack_id: hazard.id, pokemon_id: skarmory.id)
+
+hazard5 = PackPokemon.create!(pack_id: hazard.id, pokemon_id: chesnaught.id)
+
+hazard6 = PackPokemon.create!(pack_id: hazard.id, pokemon_id: scolipede.id)
+
+hazard7 = PackPokemon.create!(pack_id: hazard.id, pokemon_id: froslass.id)
+
+hazard8 = PackPokemon.create!(pack_id: hazard.id, pokemon_id: sandslash.id)
+
+hazard9 = PackPokemon.create!(pack_id: hazard.id, pokemon_id: delibird.id)
+
+hazard10 = PackPokemon.create!(pack_id: hazard.id, pokemon_id: coalossal.id)
+
+hazard11 = PackPokemon.create!(pack_id: hazard.id, pokemon_id: nihilego.id)
+
+hazard12 = PackPokemon.create!(pack_id: hazard.id, pokemon_id: accelgor.id)
+
+hazard13 = PackPokemon.create!(pack_id: hazard.id, pokemon_id: drapion.id)
+
+hazard14 = PackPokemon.create!(pack_id: hazard.id, pokemon_id: nidoking.id)
+
+hazard15 = PackPokemon.create!(pack_id: hazard.id, pokemon_id: nidoqueen.id)
+
+hazard16 = PackPokemon.create!(pack_id: hazard.id, pokemon_id: pincurchin.id)
+
+hazard17 = PackPokemon.create!(pack_id: hazard.id, pokemon_id: weezing.id)
+
+hazard18 = PackPokemon.create!(pack_id: hazard.id, pokemon_id: cofagrigus.id)
+
+hazard19 = PackPokemon.create!(pack_id: hazard.id, pokemon_id: vespiquen.id)
+
+hazard20 = PackPokemon.create!(pack_id: hazard.id, pokemon_id: qwilfish.id)
+
+hazard21 = PackPokemon.create!(pack_id: hazard.id, pokemon_id: roserade.id)
+
+hazard22 = PackPokemon.create!(pack_id: hazard.id, pokemon_id: blissey.id)
+
+hazard23 = PackPokemon.create!(pack_id: hazard.id, pokemon_id: tyranitar.id)
+
+hazard24 = PackPokemon.create!(pack_id: hazard.id, pokemon_id: swampert.id)
+
+hazard25 = PackPokemon.create!(pack_id: hazard.id, pokemon_id: kommoo.id)
+
+hazard26 = PackPokemon.create!(pack_id: hazard.id, pokemon_id: azelf.id)
+
+hazard27 = PackPokemon.create!(pack_id: hazard.id, pokemon_id: uxie.id)
+
+hazard28 = PackPokemon.create!(pack_id: hazard.id, pokemon_id: forretress.id)
+
+hazard29 = PackPokemon.create!(pack_id: hazard.id, pokemon_id: gigalith.id)
+
+hazard30 = PackPokemon.create!(pack_id: hazard.id, pokemon_id: rhyperior.id)
+
+hazard31 = PackPokemon.create!(pack_id: hazard.id, pokemon_id: torkoal.id)
+
+hazard32 = PackPokemon.create!(pack_id: hazard.id, pokemon_id: shuckle.id)
+
+hazard33 = PackPokemon.create!(pack_id: hazard.id, pokemon_id: galvantula.id)
+
+hazard34 = PackPokemon.create!(pack_id: hazard.id, pokemon_id: slurpuff.id)
+
+hazard35 = PackPokemon.create!(pack_id: hazard.id, pokemon_id: ribombee.id)
+
+hazard36 = PackPokemon.create!(pack_id: hazard.id, pokemon_id: vikavolt.id)
+
+hazard37 = PackPokemon.create!(pack_id: hazard.id, pokemon_id: araquanid.id)
+
+hazard38 = PackPokemon.create!(pack_id: hazard.id, pokemon_id: orbeetle.id)
+
+hazard39 = PackPokemon.create!(pack_id: hazard.id, pokemon_id: druddigon.id)
+
+hazard40 = PackPokemon.create!(pack_id: hazard.id, pokemon_id: golurk.id)
+
+pivot1 = PackPokemon.create!(pack_id: pivot.id, pokemon_id: slowbro.id)
+
+pivot2 = PackPokemon.create!(pack_id: pivot.id, pokemon_id: chansey.id)
+
+pivot3 = PackPokemon.create!(pack_id: pivot.id, pokemon_id: magnezone.id)
+
+pivot4 = PackPokemon.create!(pack_id: pivot.id, pokemon_id: slowking.id)
+
+pivot5 = PackPokemon.create!(pack_id: pivot.id, pokemon_id: butterfree.id)
+
+pivot6 = PackPokemon.create!(pack_id: pivot.id, pokemon_id: arcanine.id)
+
+pivot7 = PackPokemon.create!(pack_id: pivot.id, pokemon_id: magmortar.id)
+
+pivot8 = PackPokemon.create!(pack_id: pivot.id, pokemon_id: wigglytuff.id)
+
+pivot9 = PackPokemon.create!(pack_id: pivot.id, pokemon_id: xatu.id)
+
+pivot10 = PackPokemon.create!(pack_id: pivot.id, pokemon_id: porygon2.id)
+
+pivot11 = PackPokemon.create!(pack_id: pivot.id, pokemon_id: electrode.id)
+
+pivot12 = PackPokemon.create!(pack_id: pivot.id, pokemon_id: starmie.id)
+
+pivot13 = PackPokemon.create!(pack_id: pivot.id, pokemon_id: blaziken.id)
+
+pivot14 = PackPokemon.create!(pack_id: pivot.id, pokemon_id: rillaboom.id)
+
+pivot15 = PackPokemon.create!(pack_id: pivot.id, pokemon_id: zapdos.id)
+
+pivot16 = PackPokemon.create!(pack_id: pivot.id, pokemon_id: pelipper.id)
+
+pivot17 = PackPokemon.create!(pack_id: pivot.id, pokemon_id: hawlucha.id)
+
+pivot18 = PackPokemon.create!(pack_id: pivot.id, pokemon_id: thundurus.id)
+
+pivot19 = PackPokemon.create!(pack_id: pivot.id, pokemon_id: thundurust.id)
+
+pivot20 = PackPokemon.create!(pack_id: pivot.id, pokemon_id: ribombee.id)
+
+pivot21 = PackPokemon.create!(pack_id: pivot.id, pokemon_id: accelgor.id)
+
+pivot22 = PackPokemon.create!(pack_id: pivot.id, pokemon_id: decidueye.id)
+
+pivot23 = PackPokemon.create!(pack_id: pivot.id, pokemon_id: eelektross.id)
+
+pivot24 = PackPokemon.create!(pack_id: pivot.id, pokemon_id: passimian.id)
+
+pivot25 = PackPokemon.create!(pack_id: pivot.id, pokemon_id: raticate.id)
+
+pivot26 = PackPokemon.create!(pack_id: pivot.id, pokemon_id: regieleki.id)
+
+pivot27 = PackPokemon.create!(pack_id: pivot.id, pokemon_id: cobalion.id)
+
+pivot28 = PackPokemon.create!(pack_id: pivot.id, pokemon_id: heliolisk.id)
+
+pivot29 = PackPokemon.create!(pack_id: pivot.id, pokemon_id: zeraora.id)
+
+pivot30 = PackPokemon.create!(pack_id: pivot.id, pokemon_id: raichualola.id)
+
+pivot31 = PackPokemon.create!(pack_id: pivot.id, pokemon_id: rotom.id)
+
+pivot32 = PackPokemon.create!(pack_id: pivot.id, pokemon_id: forretress.id)
+
+pivot33 = PackPokemon.create!(pack_id: pivot.id, pokemon_id: vikavolt.id)
+
+pivot34 = PackPokemon.create!(pack_id: pivot.id, pokemon_id: swampert.id)
+
+pivot35 = PackPokemon.create!(pack_id: pivot.id, pokemon_id: dragalge.id)
+
+pivot36 = PackPokemon.create!(pack_id: pivot.id, pokemon_id: barraskewda.id)
+
+pivot37 = PackPokemon.create!(pack_id: pivot.id, pokemon_id: seaking.id)
+
+pivot38 = PackPokemon.create!(pack_id: pivot.id, pokemon_id: kabutops.id)
+
+pivot39 = PackPokemon.create!(pack_id: pivot.id, pokemon_id: kingdra.id)
+
+pivot40 = PackPokemon.create!(pack_id: pivot.id, pokemon_id: sharpedo.id)
+
+removal1 = PackPokemon.create!(pack_id: removal.id, pokemon_id: espeon.id)
+
+removal2 = PackPokemon.create!(pack_id: removal.id, pokemon_id: hatterene.id)
+
+removal3 = PackPokemon.create!(pack_id: removal.id, pokemon_id: xatu.id)
+
+removal4 = PackPokemon.create!(pack_id: removal.id, pokemon_id: skarmory.id)
+
+removal5 = PackPokemon.create!(pack_id: removal.id, pokemon_id: excadrill.id)
+
+removal6 = PackPokemon.create!(pack_id: removal.id, pokemon_id: donphan.id)
+
+removal7 = PackPokemon.create!(pack_id: removal.id, pokemon_id: avalugg.id)
+
+removal8 = PackPokemon.create!(pack_id: removal.id, pokemon_id: blastoise.id)
+eldegoss = Pokemon.create(name:"Eldegoss", overall: 7)
+removal9 = PackPokemon.create!(pack_id: removal.id, pokemon_id: eldegoss.id)
+
+removal10 = PackPokemon.create!(pack_id: removal.id, pokemon_id: starmie.id)
+
+removal11 = PackPokemon.create!(pack_id: removal.id, pokemon_id: tentacruel.id)
+
+removal12 = PackPokemon.create!(pack_id: removal.id, pokemon_id: turtonator.id)
+
+removal13 = PackPokemon.create!(pack_id: removal.id, pokemon_id: dhelmise.id)
+
+removal14 = PackPokemon.create!(pack_id: removal.id, pokemon_id: komala.id)
+
+removal15 = PackPokemon.create!(pack_id: removal.id, pokemon_id: claydol.id)
+
+removal16 = PackPokemon.create!(pack_id: removal.id, pokemon_id: morpeko.id)
+
+removal17 = PackPokemon.create!(pack_id: removal.id, pokemon_id: mrrime.id)
+
+removal18 = PackPokemon.create!(pack_id: removal.id, pokemon_id: kabutops.id)
+
+removal19 = PackPokemon.create!(pack_id: removal.id, pokemon_id: hitmonlee.id)
+
+removal20 = PackPokemon.create!(pack_id: removal.id, pokemon_id: hitmontop.id)
+
+removal21 = PackPokemon.create!(pack_id: removal.id, pokemon_id: blaziken.id)
+
+removal22 = PackPokemon.create!(pack_id: removal.id, pokemon_id: serperior.id)
+
+removal23 = PackPokemon.create!(pack_id: removal.id, pokemon_id: tapufini.id)
+
+removal24 = PackPokemon.create!(pack_id: removal.id, pokemon_id: hawlucha.id)
+
+removal25 = PackPokemon.create!(pack_id: removal.id, pokemon_id: rotomheat.id)
+
+removal26 = PackPokemon.create!(pack_id: removal.id, pokemon_id: scizor.id)
+
+removal27 = PackPokemon.create!(pack_id: removal.id, pokemon_id: aerodactyl.id)
+
+removal28 = PackPokemon.create!(pack_id: removal.id, pokemon_id: delibird.id)
+
+removal29 = PackPokemon.create!(pack_id: removal.id, pokemon_id: comfey.id)
+
+removal30 = PackPokemon.create!(pack_id: removal.id, pokemon_id: florges.id)
+
+removal31 = PackPokemon.create!(pack_id: removal.id, pokemon_id: flygon.id)
+
+removal32 = PackPokemon.create!(pack_id: removal.id, pokemon_id: oricorio.id)
+
+removal33 = PackPokemon.create!(pack_id: removal.id, pokemon_id: skuntank.id)
+
+removal34 = PackPokemon.create!(pack_id: removal.id, pokemon_id: volbeat.id)
+
+removal35 = PackPokemon.create!(pack_id: removal.id, pokemon_id: weezinggalar.id)
+
+removal36 = PackPokemon.create!(pack_id: removal.id, pokemon_id: talonflame.id)
+
+removal37 = PackPokemon.create!(pack_id: removal.id, pokemon_id: noivern.id)
+
+removal38 = PackPokemon.create!(pack_id: removal.id, pokemon_id: mantine.id)
+
+removal39 = PackPokemon.create!(pack_id: removal.id, pokemon_id: drampa.id)
+
+removal40 = PackPokemon.create!(pack_id: removal.id, pokemon_id: crobat.id)
+
+setup1 = PackPokemon.create!(pack_id: setup.id, pokemon_id: kommoo.id)
+
+setup2 = PackPokemon.create!(pack_id: setup.id, pokemon_id: gyarados.id)
+
+setup3 = PackPokemon.create!(pack_id: setup.id, pokemon_id: tyranitar.id)
+
+setup4 = PackPokemon.create!(pack_id: setup.id, pokemon_id: mew.id)
+
+setup5 = PackPokemon.create!(pack_id: setup.id, pokemon_id: flygon.id)
+
+setup6 = PackPokemon.create!(pack_id: setup.id, pokemon_id: crawdaunt.id)
+
+setup7 = PackPokemon.create!(pack_id: setup.id, pokemon_id: scrafty.id)
+
+setup8 = PackPokemon.create!(pack_id: setup.id, pokemon_id: kingdra.id)
+
+setup9 = PackPokemon.create!(pack_id: setup.id, pokemon_id: lapras.id)
+feraligatr = Pokemon.create(name: "Feraligatr", overall: 6)
+setup10 = PackPokemon.create!(pack_id: setup.id, pokemon_id: feraligatr.id)
+
+setup11 = PackPokemon.create!(pack_id: setup.id, pokemon_id: volcarona.id)
+
+setup12 = PackPokemon.create!(pack_id: setup.id, pokemon_id: masquerain.id)
+
+setup13 = PackPokemon.create!(pack_id: setup.id, pokemon_id: venomoth.id)
+
+setup14 = PackPokemon.create!(pack_id: setup.id, pokemon_id: frosmoth.id)
+
+setup15 = PackPokemon.create!(pack_id: setup.id, pokemon_id: ribombee.id)
+
+setup16 = PackPokemon.create!(pack_id: setup.id, pokemon_id: serperior.id)
+
+setup17 = PackPokemon.create!(pack_id: setup.id, pokemon_id: lurantis.id)
+
+setup18 = PackPokemon.create!(pack_id: setup.id, pokemon_id: breloom.id)
+
+setup19 = PackPokemon.create!(pack_id: setup.id, pokemon_id: infernape.id)
+
+setup20 = PackPokemon.create!(pack_id: setup.id, pokemon_id: mew.id)
+
+setup21 = PackPokemon.create!(pack_id: setup.id, pokemon_id: barbaracle.id)
+
+setup22 = PackPokemon.create!(pack_id: setup.id, pokemon_id: drednaw.id)
+
+setup23 = PackPokemon.create!(pack_id: setup.id, pokemon_id: drapion.id)
+
+setup24 = PackPokemon.create!(pack_id: setup.id, pokemon_id: lucario.id)
+
+setup25 = PackPokemon.create!(pack_id: setup.id, pokemon_id: ninjask.id)
+
+setup26 = PackPokemon.create!(pack_id: setup.id, pokemon_id: silvally.id)
+
+setup27 = PackPokemon.create!(pack_id: setup.id, pokemon_id: alakazam.id)
+
+setup28 = PackPokemon.create!(pack_id: setup.id, pokemon_id: celebi.id)
+
+setup29 = PackPokemon.create!(pack_id: setup.id, pokemon_id: mesprit.id)
+
+setup30 = PackPokemon.create!(pack_id: setup.id, pokemon_id: moltresgalar.id)
+
+setup31 = PackPokemon.create!(pack_id: setup.id, pokemon_id: polteageist.id)
+
+setup32 = PackPokemon.create!(pack_id: setup.id, pokemon_id: swoobat.id)
+
+setup33 = PackPokemon.create!(pack_id: setup.id, pokemon_id: toxicroak.id)
+
+setup34 = PackPokemon.create!(pack_id: setup.id, pokemon_id: zoroark.id)
+
+setup35 = PackPokemon.create!(pack_id: setup.id, pokemon_id: beheeyem.id)
+noctowl = Pokemon.create(name: "Noctowl", overall: 5)
+setup36 = PackPokemon.create!(pack_id: setup.id, pokemon_id: noctowl.id)
+
+setup37 = PackPokemon.create!(pack_id: setup.id, pokemon_id: slurpuff.id)
+
+setup38 = PackPokemon.create!(pack_id: setup.id, pokemon_id: blastoise.id)
+
+setup39 = PackPokemon.create!(pack_id: setup.id, pokemon_id: lunatone.id)
+
+setup40 = PackPokemon.create!(pack_id: setup.id, pokemon_id: solrock.id)
+
+slow1 = PackPokemon.create!(pack_id: slow.id, pokemon_id: pyukumuku.id)
+
+slow2 = PackPokemon.create!(pack_id: slow.id, pokemon_id: shuckle.id)
+
+slow3 = PackPokemon.create!(pack_id: slow.id, pokemon_id: stakataka.id)
+
+slow4 = PackPokemon.create!(pack_id: slow.id, pokemon_id: slowbro.id)
+
+slow5 = PackPokemon.create!(pack_id: slow.id, pokemon_id: slowbrogalar.id)
+
+slow6 = PackPokemon.create!(pack_id: slow.id, pokemon_id: slowking.id)
+
+slow7 = PackPokemon.create!(pack_id: slow.id, pokemon_id: slowkinggalar.id)
+
+slow8 = PackPokemon.create!(pack_id: slow.id, pokemon_id: reuniclus.id)
+
+slow9 = PackPokemon.create!(pack_id: slow.id, pokemon_id: torkoal.id)
+
+slow10 = PackPokemon.create!(pack_id: slow.id, pokemon_id: escavalier.id)
+
+slow11 = PackPokemon.create!(pack_id: slow.id, pokemon_id: gigalith.id)
+
+slow12 = PackPokemon.create!(pack_id: slow.id, pokemon_id: avalugg.id)
+
+slow13 = PackPokemon.create!(pack_id: slow.id, pokemon_id: musharna.id)
+
+slow14 = PackPokemon.create!(pack_id: slow.id, pokemon_id: hatterene.id)
+
+slow15 = PackPokemon.create!(pack_id: slow.id, pokemon_id: aromatisse.id)
+
+slow16 = PackPokemon.create!(pack_id: slow.id, pokemon_id: carbink.id)
+
+slow17 = PackPokemon.create!(pack_id: slow.id, pokemon_id: forretress.id)
+
+slow18 = PackPokemon.create!(pack_id: slow.id, pokemon_id: steelix.id)
+
+slow19 = PackPokemon.create!(pack_id: slow.id, pokemon_id: snorlax.id)
+
+slow20 = PackPokemon.create!(pack_id: slow.id, pokemon_id: runerigus.id)
+
+slow21 = PackPokemon.create!(pack_id: slow.id, pokemon_id: glastrier.id)
+
+slow22 = PackPokemon.create!(pack_id: slow.id, pokemon_id: cofagrigus.id)
+
+slow23 = PackPokemon.create!(pack_id: slow.id, pokemon_id: bronzong.id)
+
+slow24 = PackPokemon.create!(pack_id: slow.id, pokemon_id: melmetal.id)
+
+slow25 = PackPokemon.create!(pack_id: slow.id, pokemon_id: spiritomb.id)
+
+slow26 = PackPokemon.create!(pack_id: slow.id, pokemon_id: palossand.id)
+
+slow27 = PackPokemon.create!(pack_id: slow.id, pokemon_id: rhyperior.id)
+
+slow28 = PackPokemon.create!(pack_id: slow.id, pokemon_id: camerupt.id)
+
+slow29 = PackPokemon.create!(pack_id: slow.id, pokemon_id: golisopod.id)
+
+slow30 = PackPokemon.create!(pack_id: slow.id, pokemon_id: guzzlord.id)
+
+slow31 = PackPokemon.create!(pack_id: slow.id, pokemon_id: marowakalola.id)
+
+slow32 = PackPokemon.create!(pack_id: slow.id, pokemon_id: conkeldurr.id)
+
+slow33 = PackPokemon.create!(pack_id: slow.id, pokemon_id: donphan.id)
+
+slow34 = PackPokemon.create!(pack_id: slow.id, pokemon_id: diancie.id)
+
+slow35 = PackPokemon.create!(pack_id: slow.id, pokemon_id: snorlax.id)
+
+slow36 = PackPokemon.create!(pack_id: slow.id, pokemon_id: machamp.id)
+
+slow37 = PackPokemon.create!(pack_id: slow.id, pokemon_id: crawdaunt.id)
+
+slow38 = PackPokemon.create!(pack_id: slow.id, pokemon_id: pangoro.id)
+
+slow39 = PackPokemon.create!(pack_id: slow.id, pokemon_id: crustle.id)
+
+slow40 = PackPokemon.create!(pack_id: slow.id, pokemon_id: dragalge.id)
+
+speed1 = PackPokemon.create!(pack_id: speed.id, pokemon_id: regieleki.id)
+
+speed2 = PackPokemon.create!(pack_id: speed.id, pokemon_id: ninjask.id)
+
+speed3 = PackPokemon.create!(pack_id: speed.id, pokemon_id: electrode.id)
+
+speed4 = PackPokemon.create!(pack_id: speed.id, pokemon_id: accelgor.id)
+
+speed5 = PackPokemon.create!(pack_id: speed.id, pokemon_id: zeraora.id)
+
+speed6 = PackPokemon.create!(pack_id: speed.id, pokemon_id: dragapult.id)
+
+speed7 = PackPokemon.create!(pack_id: speed.id, pokemon_id: barraskewda.id)
+
+speed8 = PackPokemon.create!(pack_id: speed.id, pokemon_id: crobat.id)
+
+speed9 = PackPokemon.create!(pack_id: speed.id, pokemon_id: jolteon.id)
+
+speed10 = PackPokemon.create!(pack_id: speed.id, pokemon_id: aerodactyl.id)
+
+speed11 = PackPokemon.create!(pack_id: speed.id, pokemon_id: swellow.id)
+
+speed12 = PackPokemon.create!(pack_id: speed.id, pokemon_id: greninja.id)
+
+speed13 = PackPokemon.create!(pack_id: speed.id, pokemon_id: noivern.id)
+
+speed14 = PackPokemon.create!(pack_id: speed.id, pokemon_id: alakazam.id)
+
+speed15 = PackPokemon.create!(pack_id: speed.id, pokemon_id: inteleon.id)
+
+speed16 = PackPokemon.create!(pack_id: speed.id, pokemon_id: salazzle.id)
+
+speed17 = PackPokemon.create!(pack_id: speed.id, pokemon_id: whimsicott.id)
+
+speed18 = PackPokemon.create!(pack_id: speed.id, pokemon_id: zebstrika.id)
+
+speed19 = PackPokemon.create!(pack_id: speed.id, pokemon_id: ambipom.id)
+
+speed20 = PackPokemon.create!(pack_id: speed.id, pokemon_id: cinccino.id)
+
+speed21 = PackPokemon.create!(pack_id: speed.id, pokemon_id: starmie.id)
+
+speed22 = PackPokemon.create!(pack_id: speed.id, pokemon_id: serperior.id)
+
+speed23 = PackPokemon.create!(pack_id: speed.id, pokemon_id: scolipede.id)
+
+speed24 = PackPokemon.create!(pack_id: speed.id, pokemon_id: archeops.id)
+
+speed25 = PackPokemon.create!(pack_id: speed.id, pokemon_id: jumpluff.id)
+
+speed26 = PackPokemon.create!(pack_id: speed.id, pokemon_id: raichu.id)
+
+speed27 = PackPokemon.create!(pack_id: speed.id, pokemon_id: raichualola.id)
+
+speed28 = PackPokemon.create!(pack_id: speed.id, pokemon_id: durant.id)
+
+speed29 = PackPokemon.create!(pack_id: speed.id, pokemon_id: ninetalesalola.id)
+
+speed30 = PackPokemon.create!(pack_id: speed.id, pokemon_id: virizion.id)
+
+speed31 = PackPokemon.create!(pack_id: speed.id, pokemon_id: cobalion.id)
+
+speed32 = PackPokemon.create!(pack_id: speed.id, pokemon_id: terrakion.id)
+
+speed33 = PackPokemon.create!(pack_id: speed.id, pokemon_id: sharpedo.id)
+
+speed34 = PackPokemon.create!(pack_id: speed.id, pokemon_id: talonflame.id)
+
+speed35 = PackPokemon.create!(pack_id: speed.id, pokemon_id: sneasel.id)
+
+speed36 = PackPokemon.create!(pack_id: speed.id, pokemon_id: ribombee.id)
+
+speed37 = PackPokemon.create!(pack_id: speed.id, pokemon_id: boltund.id)
+
+speed38 = PackPokemon.create!(pack_id: speed.id, pokemon_id: tornadust.id)
+
+speed39 = PackPokemon.create!(pack_id: speed.id, pokemon_id: dugtrio.id)
+
+speed40 = PackPokemon.create!(pack_id: speed.id, pokemon_id: sceptile.id)
+
+wall1 = PackPokemon.create!(pack_id: wall.id, pokemon_id: slowbro.id)
+
+wall2 = PackPokemon.create!(pack_id: wall.id, pokemon_id: chansey.id)
+
+wall3 = PackPokemon.create!(pack_id: wall.id, pokemon_id: alomomola.id)
+
+wall4 = PackPokemon.create!(pack_id: wall.id, pokemon_id: audino.id)
+
+wall5 = PackPokemon.create!(pack_id: wall.id, pokemon_id: registeel.id)
+
+wall6 = PackPokemon.create!(pack_id: wall.id, pokemon_id: torkoal.id)
+
+wall7 = PackPokemon.create!(pack_id: wall.id, pokemon_id: ferrothorn.id)
+
+wall8 = PackPokemon.create!(pack_id: wall.id, pokemon_id: tangrowth.id)
+
+wall9 = PackPokemon.create!(pack_id: wall.id, pokemon_id: chesnaught.id)
+
+wall10 = PackPokemon.create!(pack_id: wall.id, pokemon_id: weezing.id)
+
+wall11 = PackPokemon.create!(pack_id: wall.id, pokemon_id: bronzong.id)
+
+wall12 = PackPokemon.create!(pack_id: wall.id, pokemon_id: umbreon.id)
+
+wall13 = PackPokemon.create!(pack_id: wall.id, pokemon_id: corviknight.id)
+
+wall14 = PackPokemon.create!(pack_id: wall.id, pokemon_id: aggron.id)
+
+wall15 = PackPokemon.create!(pack_id: wall.id, pokemon_id: cofagrigus.id)
+
+wall16 = PackPokemon.create!(pack_id: wall.id, pokemon_id: carbink.id)
+
+wall17 = PackPokemon.create!(pack_id: wall.id, pokemon_id: forretress.id)
+
+wall18 = PackPokemon.create!(pack_id: wall.id, pokemon_id: uxie.id)
+
+wall19 = PackPokemon.create!(pack_id: wall.id, pokemon_id: sandaconda.id)
+
+wall20 = PackPokemon.create!(pack_id: wall.id, pokemon_id: gourgeist.id)
+
+wall21 = PackPokemon.create!(pack_id: wall.id, pokemon_id: coalossal.id)
+
+wall22 = PackPokemon.create!(pack_id: wall.id, pokemon_id: florges.id)
+
+wall23 = PackPokemon.create!(pack_id: wall.id, pokemon_id: goodra.id)
+
+wall24 = PackPokemon.create!(pack_id: wall.id, pokemon_id: mantine.id)
+
+wall25 = PackPokemon.create!(pack_id: wall.id, pokemon_id: tapufini.id)
+
+wall26 = PackPokemon.create!(pack_id: wall.id, pokemon_id: corsolagalar.id)
+
+wall27 = PackPokemon.create!(pack_id: wall.id, pokemon_id: milotic.id)
+
+wall28 = PackPokemon.create!(pack_id: wall.id, pokemon_id: absol.id)
+
+wall29 = PackPokemon.create!(pack_id: wall.id, pokemon_id: komala.id)
+
+wall30 = PackPokemon.create!(pack_id: wall.id, pokemon_id: kangaskhan.id)
+
+wall31 = PackPokemon.create!(pack_id: wall.id, pokemon_id: raichu.id)
+
+wall32 = PackPokemon.create!(pack_id: wall.id, pokemon_id: vaporeon.id)
+
+wall33 = PackPokemon.create!(pack_id: wall.id, pokemon_id: orbeetle.id)
+
+wall34 = PackPokemon.create!(pack_id: wall.id, pokemon_id: slowking.id)
+
+wall35 = PackPokemon.create!(pack_id: wall.id, pokemon_id: snorlax.id)
+
+wall36 = PackPokemon.create!(pack_id: wall.id, pokemon_id: cradily.id)
+
+wall37 = PackPokemon.create!(pack_id: wall.id, pokemon_id: glaceon.id)
+
+wall38 = PackPokemon.create!(pack_id: wall.id, pokemon_id: blastoise.id)
+
+wall39 = PackPokemon.create!(pack_id: wall.id, pokemon_id: togetic.id)
+
+wall40 = PackPokemon.create!(pack_id: wall.id, pokemon_id: scrafty.id)
 
 #budget
 id = Pokemon.first.id
