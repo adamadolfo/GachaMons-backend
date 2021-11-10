@@ -15,8 +15,8 @@ class UsersController < ApplicationController
 
   # POST /users
   def create
-    @user = User.new(user_params)
-
+    @user = User.new(name: params[:name], password_digest: params[:password])
+    byebug
     if @user.save
       render json: @user, status: :created, location: @user
     else
@@ -43,10 +43,5 @@ class UsersController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_user
       @user = User.find(params[:id])
-    end
-
-    # Only allow a list of trusted parameters through.
-    def user_params
-      params.require(:user).permit(:name, :password)
     end
 end
