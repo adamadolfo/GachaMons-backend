@@ -1,21 +1,9 @@
 class SessionsController < ApplicationController
     def create
-        user = User
-                .find_by(email: params["user"]["email"])
-                .try(:authenticate, params["user"]["password"])
-    
-        if user
-          session[:user_id] = user.id
-          render json: {
-            logged_in: true,
-            user: user
-          }
-        else
-          render json: { status: 401 }
+        @user = User.find_by(name: params[:name])
+        if @user && @user.authenticate(params[:password])
+          session[:user_id] = @user.id
+          render json: @user.to_json(:include => :teams)
         end
-      end
-
-      def destroy
-        session.clear
       end
 end

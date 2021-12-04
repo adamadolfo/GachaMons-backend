@@ -10,9 +10,7 @@ class TeamsController < ApplicationController
     @team = Team.new(team)
 
     if @team.save
-      render json: @team, status: :created
-    else
-      render json: @team.errors, status: :unprocessable_entity
+      render json: @team
     end
   end
 
